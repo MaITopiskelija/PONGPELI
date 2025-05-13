@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Ping Pong</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="crt">
+        <div class="game-container">
+            <div class="game-title">RETRO PING PONG</div>
+
+        
+            <div class="game-main">
+                <!-- Pelaajien pisteet ylhäällä -->
+                <div class="score-container">
+                    <div class="score player">
+                        <span class="score-label">Pelaaja 1:</span>
+                        <span class="score-value" id="player1-score">0</span>
+                    </div>
+                    <div class="score computer">
+                        <span class="score-label">Pelaaja 2:</span>
+                        <span class="score-value" id="player2-score">0</span>
+                    </div>
+                </div>
+                
+                <div class="game-play-area">
+                    <!-- Vasemman puolen ohjaimet -->
+                    <div class="side-controls left-controls">
+                        <div class="control-section">
+                            <div class="control-label">Pelaaja 1</div>
+                            <div class="control-key">W</div>
+                            <div class="control-desc">ylös</div>
+                            <div class="control-key">S</div>
+                            <div class="control-desc">alas</div>
+                        </div>
+                    </div>
+                  
+
+
+                    <!-- Pelikenttä -->
+                    <div class="center-content">
+                        <div class="court">
+                            <!-- Robotin CSS-piirros kentän sisällä -->
+                            <div class="robot">
+                                <div class="robot-head">
+                                    <div class="robot-eye left"></div>
+                                    <div class="robot-eye right"></div>
+                                    <div class="robot-antenna"></div>
+                                </div>
+                                <div class="robot-body">
+                                    <div class="robot-panel"></div>
+                                </div>
+                                <div class="robot-arm left-arm"></div>
+                                <div class="robot-arm right-arm"></div>
+                            </div>
+                            <canvas id="gameCanvas"></canvas>
+                                <div class="start-message" id="start-message">Aloita peli painamalla välilyöntiänäppäintä. <br>Peli päättyy 10 pisteeseen.
+                                <br>Voit myös aloittaa pelin Aloita uusi peli -painikkeella. </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Oikean puolen ohjaimet -->
+                    <div class="side-controls right-controls">
+                        <div class="control-section">
+                            <div class="control-label">Pelaaja 2</div>
+                            <div class="control-key">↑</div>
+                            <div class="control-desc">ylös</div>
+                            <div class="control-key">↓</div>
+                            <div class="control-desc">alas</div>
+                        </div>
+                    </div>
+                </div>
+                
+                             
+                <div class="game-controls">
+                    <!-- Uudelleenkäynnistyspainike -->
+                    <button id="restart-button">Aloita uusi peli</button>
+                    
+                    <!-- Äänitilan vaihtopainike -->
+                    <div class="sound-control">
+                        <button id="sound-toggle" class="sound-on">Ääni: Päällä</button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+ 
+<audio id="background-music" src="background-music.mp3" autoplay loop></audio>
+
+    <script src="games3.js"></script>
+</body>
+</html>
