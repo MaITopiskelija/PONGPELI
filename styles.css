@@ -103,6 +103,7 @@
     align-items: center;
     justify-content: center;
     max-width: 90%;
+    max-heigth: 80%;
     box-sizing: border-box;
   }
   .game-play-area {
