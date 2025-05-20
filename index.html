@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Ping Pong</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <div class="crt">
+      
+        <div class="game-container">
+            <div class="game-title">RETRO PING PONG</div>
+           
+        <div class="game-controls">
+            <label for="opponent-select"><strong>Valitse vastustaja:</strong></label>
+            <select id="opponent-select">
+                <option value="computer" selected>Tietokone</option>
+                <option value="human">Ihminen</option>
+            </select>
+            
+           
+    </div>
+           
+            <div class="game-main">
+                
+               
+                <div class="game-play-area">
+                    <div class="side-controls left-controls">
+                        <div class="control-section">
+                            <div class="control-label">Pelaaja 1</div>
+                            <div class="control-key">W</div>
+                            <div class="control-desc">ylös</div>
+                            <div class="control-key">S</div>
+                            <div class="control-desc">alas</div>
+                        </div>
+                    </div>
+                    <div class="center-content">
+                        <div class="court">
+                            <div class="robot">
+                                <div class="robot-head">
+                                    <div class="robot-eye left"></div>
+                                    <div class="robot-eye right"></div>
+                                    <div class="robot-antenna"></div>
+                                </div>
+                                <div class="robot-body">
+                                    <div class="robot-panel"></div>
+                                </div>
+                                <div class="robot-arm left-arm"></div>
+                                <div class="robot-arm right-arm"></div>
+                            </div>
+                            <canvas id="gameCanvas"></canvas>
+                            <div class="start-message" id="start-message">Valitse vastustaja ja paina Enter. 
+                                <br>Peli päättyy 10 pisteeseen.</div>
+                        </div>
+                    </div>
+                    <div class="side-controls right-controls">
+                        <div class="control-section">
+                            <div class="control-label">Pelaaja 2</div>
+                            <div class="control-key">↑</div>
+                            <div class="control-desc">ylös</div>
+                            <div class="control-key">↓</div>
+                            <div class="control-desc">alas</div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="sound-control"><br>
+                        <button id="sound-toggle" class="sound-on">Ääni: Päällä</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+   
+</div>
+ <script src="games.js"></script>
+</body>
+</html>
